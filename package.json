@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "next build && scp -i ~/.ssh/portfolio.pem -r .next next.config.js public pm2.config.js .env node_modules package.json package-lock.json tailwind.config.js tsconfig.json bitnami@54.204.113.57:devfolio",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,15 +13,19 @@
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
+    "devfolio-next": "file:",
     "next": "^14.0.3",
     "next-themes": "^0.3.0",
+    "nodemailer": "^6.9.15",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "resend": "^4.0.0",
     "sharp": "^0.33.5",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
+    "@types/nodemailer": "^6.4.16",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6"

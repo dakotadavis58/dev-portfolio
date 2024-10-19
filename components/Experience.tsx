@@ -60,38 +60,38 @@ export default function Experience() {
 
   return (
     <section>
-      <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+      <h2 className="font-inter-tight text-lg font-semibold text-primary-light dark:text-primary-dark mb-6">
         Experience
       </h2>
       <div className="space-y-1">
         {items.map((item, index) => (
           <article
             key={index}
-            className="p-5 rounded-xl odd:bg-gradient-to-tr odd:from-gray-100 odd:to-gray-50 dark:odd:bg-gradient-to-tr dark:odd:from-gray-800 dark:odd:to-gray-800/[0.65]"
+            className="p-5 rounded-xl bg-card-light dark:bg-card-dark odd:bg-cardAlt-light dark:odd:bg-cardAlt-dark"
           >
             <div className="sm:flex gap-5">
-              <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600/[0.65] shadow-sm max-sm:mb-3 sm:mt-5">
+              <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-cardAlt-light dark:bg-cardAlt-dark border border-gray-200 dark:border-gray-600 shadow-sm max-sm:mb-3 sm:mt-5">
                 {item.icon}
               </div>
               <div>
                 <div className="space-y-1.5 mb-3">
-                  <div className="text-[13px] italic text-gray-500/70">
+                  <div className="text-[13px] italic text-textSecondary-light dark:text-textSecondary-dark">
                     {item.date}
                   </div>
-                  <h3 className="font-semibold text-gray-800 dark:text-gray-100">
+                  <h3 className="font-semibold text-text-light dark:text-text-dark">
                     <a
-                      className="hover:underline decoration-2 decoration-gray-300 dark:decoration-gray-600 underline-offset-2"
+                      className="hover:underline decoration-2 decoration-primary-light dark:decoration-primary-dark underline-offset-2"
                       href={item.link}
                       target="_blank"
                     >
                       {item.title}
                     </a>
                   </h3>
-                  <div className="text-[13px] font-medium text-gray-600dark:text-gray-400">
+                  <div className="text-[13px] font-medium text-textSecondary-light dark:text-textSecondary-dark">
                     {item.location}
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-text-light dark:text-text-dark">
                   {item.description}
                 </p>
               </div>

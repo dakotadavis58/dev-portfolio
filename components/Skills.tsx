@@ -7,47 +7,73 @@ export default function Skills() {
       skills: [
         "React",
         "Vue.js",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
+        "Angular",
+        "Typescript",
+        "HTML",
+        "CSS",
         "Responsive Design",
+        "Tailwind CSS",
       ],
     },
     {
       category: "Backend Development",
-      skills: ["Node.js", "Express.js", "Python", "Django", "RESTful APIs"],
+      skills: [
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Django",
+        "RESTful APIs",
+        "GraphQL",
+        "Java",
+        "Spring Boot",
+      ],
     },
     {
       category: "Databases",
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "DynamoDB"],
     },
     {
       category: "DevOps & Tools",
-      skills: ["Git", "Docker", "CI/CD", "AWS", "Nginx"],
+      skills: [
+        "Git",
+        "Docker",
+        "CI/CD",
+        "AWS",
+        "Nginx",
+        "Apache",
+        "Jenkins",
+        "Kubernetes",
+      ],
     },
   ];
 
   return (
-    <section>
-      <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+    <section className="bg-card-light dark:bg-card-dark rounded-xl">
+      <h2 className="font-inter-tight text-lg font-semibold text-primary-light dark:text-primary-dark mb-6">
         Skills
       </h2>
       <div className="space-y-4">
         {skillCategories.map((category, index) => (
           <article
             key={index}
-            className="relative p-5 rounded-xl odd:bg-gradient-to-tr odd:from-gray-100 odd:to-gray-50 dark:odd:bg-gradient-to-tr dark:odd:from-gray-800 dark:odd:to-gray-800/[0.65] group"
+            className={`relative p-5 rounded-xl ${
+              index % 2 === 0
+                ? "bg-cardAlt-light dark:bg-cardAlt-dark"
+                : "bg-card-light dark:bg-card-dark"
+            }`}
           >
-            <div className="space-y-1.5 mb-2">
-              <h3 className="font-semibold text-gray-800 dark:text-gray-100">
-                {category.category}
-              </h3>
-            </div>
+            <h3 className="font-semibold text-text-light dark:text-text-dark mb-3">
+              {category.category}
+            </h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="inline-block px-3 py-1 text-sm font-medium text-gray-700 bg-gray-200 rounded-full dark:text-gray-300 dark:bg-gray-700"
+                  className={`inline-block px-3 py-1 text-sm font-medium text-text-light dark:text-text-dark rounded-full ${
+                    index % 2 === 0
+                      ? "bg-card-light dark:bg-card-dark"
+                      : "bg-cardAlt-light dark:bg-cardAlt-dark"
+                  }`}
                 >
                   {skill}
                 </span>

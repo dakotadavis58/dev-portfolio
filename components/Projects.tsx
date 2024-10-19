@@ -1,57 +1,43 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { PROJECTS } from "@/constants/projects";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Project Name 1",
-      image: "/images/tutorial-01.jpg",
-      detailLink: "/projects/project-1",
-      demoLink: "https://demo-link-1.com",
-    },
-    {
-      title: "Project Name 2",
-      image: "/images/tutorial-02.jpg",
-      detailLink: "/projects/project-2",
-      demoLink: "https://demo-link-2.com",
-    },
-    // Add more projects as needed
-  ];
-
   return (
-    <section>
-      <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
+    <section className="bg-card-light dark:bg-card-dark rounded-xl">
+      <h2 className="font-inter-tight text-lg font-semibold text-primary-light dark:text-primary-dark mb-6">
         Projects
       </h2>
-      <div className="grid min-[580px]:grid-cols-2 gap-6">
-        {projects.map((project, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {PROJECTS.map((project, index) => (
           <article
             key={index}
-            className="relative aspect-video rounded-xl shadow-lg overflow-hidden group"
+            className="relative rounded-lg overflow-hidden bg-cardAlt-light dark:bg-cardAlt-dark"
           >
             <Image
-              className="object-cover transition-transform duration-300 group-hover:scale-110"
+              className="object-cover w-full h-64"
               src={project.image}
-              layout="fill"
               alt={project.title}
+              width={1000}
+              height={400}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
               <h3 className="text-xl font-semibold text-white mb-4">
                 {project.title}
               </h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-2">
                 <Link
                   href={project.demoLink}
-                  className="px-4 py-2 bg-green-500 text-white rounded-full text-sm hover:bg-green-600 transition duration-300"
+                  className="px-4 py-2 bg-button-secondary-light dark:bg-button-secondary-dark text-white rounded-full text-sm hover:bg-opacity-90 transition duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Demo
                 </Link>
                 <Link
-                  href={project.detailLink}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-full text-sm hover:bg-blue-600 transition duration-300"
+                  href={`/projects/${project.id}`}
+                  className="px-4 py-2 bg-button-primary-light dark:bg-button-primary-dark text-white rounded-full text-sm hover:bg-opacity-90 transition duration-300"
                 >
                   Details
                 </Link>
