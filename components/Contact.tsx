@@ -95,8 +95,19 @@ export default function Contact() {
             disabled={isSubmitting}
             className="w-full btn-sm text-white dark:bg-button-primary-dark hover:bg-primary-light/90  dark:hover:bg-primary-dark/90 shadow relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.2)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
           >
-            Get In Touch
+            {isSubmitting ? "Sending..." : "Get In Touch"}
           </button>
+
+          {submitStatus === "success" && (
+            <p className="mt-4 text-green-600 dark:text-green-400 text-sm">
+              Thank you! Your message has been sent successfully.
+            </p>
+          )}
+          {submitStatus === "error" && (
+            <p className="mt-4 text-red-600 dark:text-red-400 text-sm">
+              Oops! Something went wrong. Please try again later.
+            </p>
+          )}
         </form>
       </div>
     </section>
