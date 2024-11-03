@@ -1,0 +1,212 @@
+{
+  "projects": [
+    {
+      "id": "vehicle-inventory-scraper",
+      "title": "Scalable Vehicle Inventory Scraping System",
+      "shortDescription": "Built a high-performance, cost-effective web scraping architecture using AWS ECS and Docker, replacing an expensive third-party service.",
+      "cardImage": {
+        "src": "https://picsum.photos/seed/card1/400/300",
+        "alt": "Diagram showing cloud architecture of scraping system",
+        "suggestedContent": "A clean, minimalist diagram showing ECS containers, job queue, and data flow"
+      },
+      "metadata": {
+        "title": "Vehicle Inventory Scraper Case Study | Full Stack Development",
+        "description": "Learn how I built a scalable web scraping architecture using AWS ECS and Docker, replacing an expensive third-party service and reducing operational costs by 60%.",
+        "keywords": [
+          "web scraping",
+          "AWS ECS",
+          "Docker",
+          "NestJS",
+          "microservices",
+          "cloud architecture"
+        ],
+        "type": "website",
+        "openGraph": {
+          "title": "Building a Scalable Vehicle Inventory Scraping System",
+          "description": "Case study on developing a cost-effective, high-performance web scraping system using AWS ECS and Docker",
+          "image": "https://picsum.photos/seed/card-scraper/1200/630"
+        }
+      },
+      "tags": [
+        "AWS",
+        "ECS",
+        "Docker",
+        "NestJS",
+        "Node.js",
+        "Microservices",
+        "Cloud Architecture"
+      ],
+      "detailedContent": {
+        "problem": "Marketing company relied on an expensive, unreliable third-party service for collecting vehicle inventory data from dealer websites. The system needed to be more cost-effective and scalable to support growing clientele.",
+        "solution": "Designed and implemented a scalable web scraping architecture using AWS ECS and Docker containers, with permission-based access to dealer inventory data.",
+        "technicalDetails": [
+          "Built using NestJS for microservices architecture",
+          "Implemented job queue system for distributed scraping tasks",
+          "Designed auto-scaling container infrastructure using AWS ECS",
+          "Created robust error handling and retry mechanisms",
+          "Implemented data validation and cleaning pipelines"
+        ],
+        "impact": [
+          "Reduced operational costs by 60% compared to third-party solution",
+          "Improved data reliability to 99.9% uptime",
+          "Scaled to handle 3x more dealer websites without performance degradation"
+        ],
+        "detailImages": [
+          {
+            "src": "/images/scraper-arch.png",
+            "alt": "Detailed architecture diagram",
+            "suggestedContent": "Comprehensive system architecture diagram showing AWS services, data flow, and scaling mechanisms"
+          },
+          {
+            "src": "https://picsum.photos/600/400",
+            "alt": "Scraping job dashboard",
+            "suggestedContent": "Admin dashboard showing job status and metrics (with dummy data)"
+          },
+          {
+            "src": "https://picsum.photos/600/400",
+            "alt": "System monitoring dashboard",
+            "suggestedContent": "Performance monitoring dashboard showing system health metrics"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inventory-insights",
+      "title": "Inventory Insights Dashboard",
+      "shortDescription": "Modernized legacy PHP application to a high-performance NextJS dashboard for inventory analytics and competitor comparison.",
+      "cardImage": {
+        "src": "https://picsum.photos/seed/card1/400/300",
+        "alt": "Modern dashboard interface",
+        "suggestedContent": "Clean, modern dashboard UI showing inventory analytics with charts and graphs"
+      },
+      "metadata": {
+        "title": "Inventory Insights Dashboard Case Study | NextJS Migration",
+        "description": "Discover how I modernized a legacy PHP application into a high-performance NextJS dashboard, reducing page load times by 70% and improving user engagement.",
+        "keywords": [
+          "NextJS",
+          "React",
+          "App Router",
+          "full stack",
+          "dashboard",
+          "PHP migration"
+        ],
+        "type": "website",
+        "openGraph": {
+          "title": "Modernizing Legacy Systems with NextJS",
+          "description": "Case study on rebuilding a PHP application as a modern NextJS dashboard",
+          "image": "https://picsum.photos/seed/card-insights/1200/630"
+        }
+      },
+      "tags": [
+        "NextJS",
+        "React",
+        "Node.js",
+        "App Router",
+        "Full Stack",
+        "Analytics"
+      ],
+      "detailedContent": {
+        "problem": "Legacy PHP application was slow and difficult to maintain, causing poor user experience for dealers trying to analyze inventory movement.",
+        "solution": "Complete rebuild using NextJS App Router, implementing server-side rendering and modern microservices architecture.",
+        "technicalDetails": [
+          "Migrated from PHP to NextJS App Router architecture",
+          "Implemented server-side rendering for improved performance",
+          "Built RESTful microservices for data management",
+          "Created real-time analytics processing pipeline",
+          "Designed comparative analysis features"
+        ],
+        "impact": [
+          "Reduced page load times by 70%",
+          "Improved user engagement by 45%",
+          "Enabled real-time inventory movement tracking"
+        ],
+        "detailImages": [
+          {
+            "src": "/images/inv-insights-arch.png",
+            "alt": "Competitor comparison interface",
+            "suggestedContent": "Interface showing dealer inventory comparison with market trends"
+          },
+          {
+            "src": "https://picsum.photos/600/400",
+            "alt": "Analytics dashboard",
+            "suggestedContent": "Detailed analytics view with charts and filters"
+          },
+          {
+            "src": "https://picsum.photos/600/400",
+            "alt": "System architecture",
+            "suggestedContent": "Technical diagram showing the NextJS app architecture and data flow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "leadiq-platform",
+      "title": "LeadIQ - Multi-Channel Lead Management Platform",
+      "shortDescription": "Developed comprehensive lead management system integrating Google Ads, Facebook, and call tracking data into a unified dashboard.",
+      "cardImage": {
+        "src": "https://picsum.photos/seed/card1/400/300",
+        "alt": "Lead management dashboard",
+        "suggestedContent": "Modern interface showing lead analytics and multi-channel data integration"
+      },
+      "metadata": {
+        "title": "LeadIQ Platform Case Study | Multi-Channel Lead Management",
+        "description": "Explore how I developed a comprehensive lead management system integrating Google Ads, Facebook, and call tracking data into a unified dashboard.",
+        "keywords": [
+          "lead management",
+          "Google Ads API",
+          "Facebook API",
+          "NextJS",
+          "NestJS",
+          "full stack"
+        ],
+        "type": "website",
+        "openGraph": {
+          "title": "Building a Multi-Channel Lead Management Platform",
+          "description": "Case study on creating an integrated lead management system with multiple data sources",
+          "image": "https://picsum.photos/seed/card-leadiq/1200/630"
+        }
+      },
+      "tags": [
+        "NextJS",
+        "NestJS",
+        "Google Ads API",
+        "Facebook API",
+        "Full Stack",
+        "Integration"
+      ],
+      "detailedContent": {
+        "problem": "Marketing company needed a centralized system to track and manage leads from multiple sources including Google Ads, Facebook, and phone calls.",
+        "solution": "Built a comprehensive lead management platform with multiple service integrations and a unified dashboard interface.",
+        "technicalDetails": [
+          "Implemented Google Ads API integration for lead capture",
+          "Created Facebook Lead Ads integration service",
+          "Built CallIQ phone tracking integration",
+          "Developed lead aggregation and normalization system",
+          "Created unified dashboard using NextJS"
+        ],
+        "impact": [
+          "Consolidated leads from 3+ channels into single interface",
+          "Reduced lead processing time by 80%",
+          "Improved lead attribution accuracy by 60%"
+        ],
+        "detailImages": [
+          {
+            "src": "https://picsum.photos/1200/500",
+            "alt": "Main dashboard interface",
+            "suggestedContent": "Main dashboard showing consolidated leads from all channels"
+          },
+          {
+            "src": "/images/leadiq-arch.png",
+            "alt": "Integration architecture",
+            "suggestedContent": "Technical diagram showing how different lead sources are integrated"
+          },
+          {
+            "src": "https://picsum.photos/600/400",
+            "alt": "Lead analytics",
+            "suggestedContent": "Analytics dashboard showing lead performance metrics"
+          }
+        ]
+      }
+    }
+  ]
+}

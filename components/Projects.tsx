@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section className="bg-card-light dark:bg-card-dark rounded-xl">
       <h2 className="font-inter-tight text-lg font-semibold text-primary-light dark:text-primary-dark mb-6">
-        Projects
+        Personal Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {PROJECTS.map((project, index) => (
@@ -16,7 +16,7 @@ export default function Projects() {
             className="relative rounded-lg overflow-hidden bg-cardAlt-light dark:bg-cardAlt-dark"
           >
             <Image
-              className="object-cover w-full h-64"
+              className="object-cover w-full h-48"
               src={project.image}
               alt={project.title}
               width={1000}
